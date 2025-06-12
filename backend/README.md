@@ -26,6 +26,9 @@ zap.sh -daemon -port 8080 -config api.key=ta_cle_api
 
 ## Configuration du backend
 ```bash
+# installer les dependances
+npm install
+
 # Renommer le .env.development en .env et mettre a jour les clés API (pour ZAP et l'API)
 mv .env.development .env
 
