@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "URLScanner",
-    "slug": "URLScanner",
+    "name": "ScanSafe",
+    "slug": "ScanSafe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "urlscanner",
+    "scheme": "scansafe",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
