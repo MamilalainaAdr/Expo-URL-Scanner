@@ -1,0 +1,17 @@
+run zap en mode sans cle avec
+    /snap/zaproxy/current/zap.sh -daemon -port 8080 -config api.disablekey=true
+
+run bback
+    npm start
+  {} {} {}  
+run app
+    npm statr
+    
+    ---------------------------------------------
+   
+App.js (structure principale)
+styles.js (styles)
+
+-----------------------------------------------
+
+Ny back nisy nmodifieko vo nande, fa refa mande fotsn defa mety fona na ts modifié
