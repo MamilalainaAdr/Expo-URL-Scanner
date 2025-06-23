@@ -164,7 +164,7 @@ export default function App() {
           <Button
             title="À propos"
             onPress={() => {
-              alert('Tsy aiko zay atao ato fa aleo mba hisy anzao.');
+              info ('Cette application permet de scanner la sécurité des sites web en détectant les vulnérabilités et en les classant selon leur niveau de gravité.');
               setShowMenu(false);
             }}
           />
@@ -227,8 +227,7 @@ export default function App() {
 
           {!scanCompleted && !loading && (
             <Text style={styles.appDescription}>
-              Cette application permet de scanner la sécurité des sites web en détectant les 
-              vulnérabilités et en les classant selon leur niveau de gravité.
+              
             </Text>
           )}
 
