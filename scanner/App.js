@@ -7,6 +7,7 @@ import {
   ScrollView,
   ActivityIndicator,
   Image,
+  Alert,
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native';
@@ -73,7 +74,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        `http://192.168.43.243:3000/scan?url=${encodeURIComponent(finalUrl)}&token=api_token`
+        `http://192.168.154.15:3000/scan?url=${encodeURIComponent(finalUrl)}&token=api_token`
       );
 
       const data = await response.json();
@@ -164,8 +165,13 @@ export default function App() {
           <Button
             title="À propos"
             onPress={() => {
-              info ('Cette application permet de scanner la sécurité des sites web en détectant les vulnérabilités et en les classant selon leur niveau de gravité.');
-              setShowMenu(false);
+              Alert.alert(
+                "ℹ️ Web Scanner - Info", // Titre de l'alerte
+                "Cette application permet de scanner la sécurité des sites web en détectant les vulnérabilités et en les classant selon leur niveau de gravité.",
+                [
+                  { text: "OK", onPress: () => setShowMenu(false) }
+                ]
+              );
             }}
           />
         </View>
